@@ -29,7 +29,7 @@ html {
 
 .hand-hour {
   z-index: 2;
-  -webkit-animation: spin 6s infinite;
+  -webkit-animation: spin 6s linear infinite;
   -webkit-transform-origin: top;
   animation: spin 6s linear infinite;
   transform-origin: bottom;
@@ -37,18 +37,18 @@ html {
 
 .hand-minute {
   z-index: 3;
-  -webkit-animation: spin 3s infinite;
+  -webkit-animation: spin 3s linear infinite;
   -webkit-transform-origin: top;
   animation: spin 3s linear infinite;
   transform-origin: bottom;
 }
-
 
 @-webkit-keyframes spin {
 
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -59,6 +59,7 @@ html {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

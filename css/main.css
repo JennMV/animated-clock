@@ -8,20 +8,58 @@ html {
   width: 300px;
 
   background: transparent url("../images/clock-face.svg") no-repeat center center;
+  position: relative;
+  z-index: 1;
 }
 
 .center {
   width: 28px;
+  position: absolute;
+  left: calc(50% - 15px);
+  top: 135px;
+  z-index: 100;
 }
 
 .hand {
   width: 14px;
+  position: absolute;
+  left: calc(50% - 8px);
+  bottom: 150px;
 }
 
 .hand-hour {
-
+  z-index: 3;
+  -webkit-animation: spin 6s infinite;
+  -webkit-transform-origin: top;
+  animation: spin 6s linear infinite;
+  transform-origin: bottom;
 }
 
 .hand-minute {
+  z-index: 2;
+  -webkit-animation: spin 3s infinite;
+  -webkit-transform-origin: top;
+  animation: spin 3s linear infinite;
+  transform-origin: bottom;r
+}
 
+
+@-webkit-keyframes spin {
+
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

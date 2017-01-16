@@ -28,7 +28,7 @@ html {
 }
 
 .hand-hour {
-  z-index: 3;
+  z-index: 2;
   -webkit-animation: spin 6s infinite;
   -webkit-transform-origin: top;
   animation: spin 6s linear infinite;
@@ -36,11 +36,11 @@ html {
 }
 
 .hand-minute {
-  z-index: 2;
+  z-index: 3;
   -webkit-animation: spin 3s infinite;
   -webkit-transform-origin: top;
   animation: spin 3s linear infinite;
-  transform-origin: bottom;r
+  transform-origin: bottom;
 }
 
 
